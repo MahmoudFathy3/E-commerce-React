@@ -1,0 +1,119 @@
+.Model{
+    position: relative;
+} 
+
+.Model .overLay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .75);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 999;
+    cursor: auto;
+    transition: all .6s ease-out;
+}
+
+.show{
+    opacity: 1;
+}
+
+.Model .Items{
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    background-color: #FFF;
+    padding: 15px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    cursor: auto;
+    z-index: 1000;
+    transition: all .6s ease-out;
+
+}
+
+.Items .info{
+    display: flex;
+}
+
+.Items .info .images{
+    display: flex;
+    align-items: center;
+    flex: 45%;
+}
+
+.Items .info img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.Items .info .box{
+    flex-direction: column;
+    flex: 55%; 
+    margin: 100px auto;
+}
+
+.Items .info .box h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.Items .info .box p{
+    margin: 20px auto;
+    line-height: 1.6;
+    margin-right: 20px;
+    color: #444;
+}
+
+.Items .info .box .Review{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+.Items .info .box button{
+    justify-content: left;
+    padding: 15px 40px;
+    background: var(--main-hover);
+    border: none;
+    border-radius: 4px;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.Items .info .box button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--main-color);
+    border-radius:4px;
+    z-index: -1;
+    transition: .6s;
+}
+
+.Items .info .box button:hover::before{
+    width: 100%;
+}
+
+
+.Items .info .box .Review i:not(:first-of-type){
+    margin-left: 5px;
+}
+
+.Items .info .box .Review i:hover{
+    color: var(--main-Delete);
+}

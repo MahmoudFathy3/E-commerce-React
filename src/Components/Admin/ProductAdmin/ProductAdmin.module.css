@@ -1,0 +1,19 @@
+.ProductAdmin{
+    text-align: center;
+    margin: 50px auto;
+}
+
+.ProductAdmin h2{
+    margin-bottom: 45px;
+}
+
+.ProductAdmin button{
+    padding: 15px 20px;
+    margin: 20px auto;
+    border: 1px solid #EEE;
+    border-radius: 4px;
+    background-image:linear-gradient(to right,var(--main-color), var(--main-hover));
+    color: #FFF;
+    font-size: 17px;
+    cursor: pointer;
+}

@@ -1,0 +1,139 @@
+.Products{
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.Products .List{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #DDD;
+    padding: 10px 0;
+    margin-bottom: 20px;
+
+}
+
+.Products .List small{
+    font-size: 20px;
+    font-weight: bold;
+    user-select: none;
+}
+.Products .List span{
+    color: var(--main-hover);
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.Products .List span::before{
+    content: '>';
+    float: right;
+}
+
+.Products .info{
+    float: left;
+    width: calc(96% / 4);
+    background-color: #EEE;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 438px; 
+    border: 1px solid #DDD;
+    border-radius: 6px;
+    position: relative;
+}
+
+.Products .info:not(:last-of-type){
+    margin-right: 10px;
+}
+
+.Products .info .imgs{
+    text-align: center;
+}
+
+.Products .info .imgs  img{
+    transform: scale(.90);
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+.Products .info:hover img{
+    transform: scale(1);
+}
+
+.Products .info .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.Products .info .title h4{
+    color: var(--main-hover);
+}
+
+.Products .info .Desc{
+    height: 90px;
+    overflow-y: scroll;
+}
+
+.Products .info .Desc::-webkit-scrollbar{
+    width: 6px;
+}
+
+.Products .info .Desc::-webkit-scrollbar-thumb{
+    background-color: #D6D6D6;
+}
+.Products .info .Desc::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+.Products .info .Desc p {
+    margin: 10px 0 ;
+    color: #444;
+    word-wrap: break-word;
+}
+
+.Products .info .Review{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+    background-color: #EEE;
+    z-index: 1;
+} 
+
+.Products .info .Review i:hover {
+    color: red;
+} 
+
+.Products .info .Review button{
+    position: relative;
+    padding: 10px 20px;
+    color: #FFF;
+    border: 1px solid #EEE;
+    background-color: var(--main-color);
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.Products .info .Review button::before{
+    content: '';
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--main-hover);
+    width: 0;
+    height: 100%;
+    transition: .4s;
+    z-index: -1;
+}
+
+.Products .info:hover button::before{
+    width: 100%;
+}
+
+.Products .info:hover button{
+    color: #FFF;
+}

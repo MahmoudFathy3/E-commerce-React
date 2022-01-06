@@ -1,0 +1,33 @@
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px; 
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.info::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7px;
+    height: 100%;
+    background-color: var(--main-hover);
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+.info h3{
+    font-size: 25px;
+    font-weight: bold;
+    color: #444;
+    user-select: none;
+    cursor: pointer;
+}
+
+.info h3.active{
+    color:  var(--main-hover);
+}

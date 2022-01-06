@@ -1,0 +1,52 @@
+.Customers{
+margin: 40px auto;
+}
+
+.Customers h2{
+    text-align: center;
+    margin: 40px auto;
+}
+
+.Customers table{
+    margin: auto;
+    width: 100%;
+}
+
+.Customers table .id{
+    width: 10%;
+}
+.Customers table .Name{
+    width: 20%;
+
+}
+.Customers table .Password {
+    width: 10%;
+}
+.Customers table .Email{
+    width: 40%;
+}
+
+.Customers table .Type{
+    width: 10%;
+}
+.Customers table .Action{
+    width: 10%;
+}
+
+
+.Customers table td button{
+    padding: 10px 20px;
+    background: var(--main-Delete);
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    color: #FFF;
+    cursor: pointer;
+    
+}
+
+.Customers p{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+} 

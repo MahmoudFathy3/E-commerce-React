@@ -1,0 +1,45 @@
+.AddProduct{
+    text-align: center;
+    margin: 50px auto;
+}
+
+.form{
+   width: 500px;
+   margin: 50px auto;
+}
+
+.form label{
+    float: left;
+    width: 20%;
+    text-align: left;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.form input{
+    width: 80%;  
+    padding: 15px 20px;
+    border: 1px solid #AAA;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.form input:focus{
+    outline: none;
+}
+
+.form input:focus::placeholder{
+    opacity: 0;
+}
+
+.form button{
+    width: 80%;
+    padding: 15px 20px;
+    margin-left: 20%;
+    border: none;
+    background-image:linear-gradient(to right,var(--main-color), var(--main-hover));
+    color: #FFF;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+
+}

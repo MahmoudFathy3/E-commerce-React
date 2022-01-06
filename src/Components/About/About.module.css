@@ -1,0 +1,62 @@
+.About{
+    padding: 50px 0;
+    overflow: hidden;
+}
+.About h2{
+    border-bottom: 1px solid #DDD;
+    font-weight: 300;
+    padding: 10px 5px;
+
+}
+.About .info{
+    float: left;
+    width: 50%;
+    margin: 30px 0;
+}
+.About .info h4{
+    color: var(--main-hover);
+    font-size: 18px;
+}
+.About .info p{
+    padding:  10px 30px 10px 0;
+    color: #555;
+}
+
+.About .info ul{
+    padding: 10px;
+    margin: 30px 0;
+}
+
+.About .info ul li{
+    margin-bottom: 10px;
+}
+.About .info ul li a{
+    text-decoration: none;
+    color: #333;
+}
+
+.About .info button {
+    padding: 13px 25px;
+    background-color: var(--main-color);
+    border: 1px solid #EEE;
+    border-radius: 4px;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.About .info button::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color:  var(--main-hover);
+    width: 0;
+    height: 100%;
+    transition: .3s;
+    z-index: -1;
+}
+
+.About .info button:hover::before{
+    width: 100%;
+}

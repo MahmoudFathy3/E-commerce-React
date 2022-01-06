@@ -1,0 +1,51 @@
+.UserAdmin{
+    margin: 40px auto;
+    }
+    
+.UserAdmin h2{
+    text-align: center;
+    margin: 40px auto;
+}
+
+.UserAdmin table{
+    margin: auto;
+    width: 100%;
+}
+
+.UserAdmin table .id{
+    width: 10%;
+}
+.UserAdmin table .Name{
+    width: 20%;
+
+}
+.UserAdmin table .Password {
+    width: 10%;
+}
+.UserAdmin table .Email{
+    width: 40%;
+}
+
+.UserAdmin table .Type{
+    width: 10%;
+}
+.UserAdmin table .Action{
+    width: 10%;
+}
+    
+    
+.UserAdmin table td button{
+    padding: 10px 20px;
+    background: var(--main-Delete);
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    color: #FFF;
+    cursor: pointer;
+    
+}
+    
+.UserAdmin p{
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;    
+}

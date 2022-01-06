@@ -1,0 +1,33 @@
+.Footer{
+    padding: 50px 0;
+    overflow: hidden;
+}
+.Footer .info {
+    background-color: #EEE;
+    width: 100%;
+    float: left;
+    padding: 20px;
+    border-radius: 7px;
+}
+.Footer .info .box{
+    width: 70%;
+    float: left;
+}
+.Footer .info .box h2{
+    color: #1a6692;
+}
+
+.Footer .info .box p{
+    padding: 5px;
+    color: #555;
+}
+
+.Footer button{
+    float: right;
+    padding: 13px 30px;
+    background-color: var(--main-color);
+    color: #FFF;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
