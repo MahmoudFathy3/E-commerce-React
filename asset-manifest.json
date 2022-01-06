@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/MahmoudFathy3/E-commerce-React/static/css/main.1549c15b.css",
+    "main.js": "/MahmoudFathy3/E-commerce-React/static/js/main.0cee34e3.js",
+    "static/media/slide_01.jpg": "/MahmoudFathy3/E-commerce-React/static/media/slide_01.9afdedfa878854afbd56.jpg",
+    "index.html": "/MahmoudFathy3/E-commerce-React/index.html",
+    "main.1549c15b.css.map": "/MahmoudFathy3/E-commerce-React/static/css/main.1549c15b.css.map",
+    "main.0cee34e3.js.map": "/MahmoudFathy3/E-commerce-React/static/js/main.0cee34e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1549c15b.css",
+    "static/js/main.0cee34e3.js"
+  ]
+}
